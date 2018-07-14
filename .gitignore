@@ -1,2 +1,4 @@
 .vscode
 es_venv
+.DS_Store
+*.pyc
