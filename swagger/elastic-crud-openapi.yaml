@@ -12,15 +12,16 @@ schemes:
  - http
 # tags are used for organizing operations
 tags:
-- name: public
-  description: Operations available to regular developers
-- name: admins
-  description: Secured Admin-only calls
+- name: CRUD
+  description: Operations related to creating, reading, updating or deleting documents
+- name: Query
+  description: Operations which take in queries to perform a piece of work. For example searching documents
 
 paths:
   
   /heartbeat/:
     get:
+      summary: Returns 200, ensures the API is still alive
       produces:
       - application/json
       operationId: api.elastic-crud.heartbeat
@@ -29,6 +30,9 @@ paths:
           description: Success, your server is live
   /insertDocument/:
     post:
+      summary: Attempts to create a new document
+      tags:
+      - CRUD
       consumes:
       - application/json
       produces:
@@ -55,6 +59,9 @@ paths:
           description: Success, your server is live
   /searchDocument/:
     post:
+      summary: Searches the instance for documents which match the search query
+      tags:
+      - Query
       consumes:
       - application/json
       produces:
@@ -81,6 +88,9 @@ paths:
           description: Success, your server is live
   /deleteDocumentByQuery/{index}/{type}:
     post:
+      summary: Searches the instance for documents which match the search query; Results are then deleted
+      tags:
+      - Query
       consumes:
       - application/json
       produces:
@@ -107,6 +117,9 @@ paths:
 
   /document/{index}/{type}/{id}:
     get:
+      summary: Attempts to GET a document by its index,type and ID
+      tags:
+      - CRUD
       produces:
       - application/json
       parameters:
@@ -127,6 +140,9 @@ paths:
         200:
           description: Success, your server is live
     delete:
+      summary: Attempts to DELETE a document by its index,type and ID
+      tags:
+      - CRUD
       produces:
       - application/json
       parameters:
@@ -147,6 +163,9 @@ paths:
         200:
           description: Success, document deleted
     put:
+      summary: Attempts to GET a document by its index,type and ID and then updates it with information provided in the body
+      tags:
+      - CRUD
       consumes:
       - application/json
       produces:
