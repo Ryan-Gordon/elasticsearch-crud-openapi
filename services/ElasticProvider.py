@@ -17,9 +17,8 @@ class ElasticProvider(object):
 
         return "Success", 200
 
-    def insertDocument(self, index, type, body):
+    def insertDocument(self, index, type, body,id):
         
-        return self.conn.index(index=index, doc_type=type, body=body)
+        return self.conn.index(index=index, doc_type=type, body=body, id=id)
     def searchDocument(self, index, type, body):
-        
         return self.conn.search(index=index, doc_type=type, body=body)
