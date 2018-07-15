@@ -75,10 +75,36 @@ paths:
           description: The search query to be run
           schema:
             type: object
-      operationId: api.elastic-crud.searchDocument
+      operationId: api.elastic-query.searchDocument
       responses:
         200:
           description: Success, your server is live
+  /deleteDocumentByQuery/{index}/{type}:
+    post:
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+        - in: path
+          name: index
+          type: string
+          required: true 
+        - in: path
+          name: type
+          type: string 
+          required: true 
+        - in: body
+          name: query
+          description: The delete query to be run
+          schema:
+            type: object
+      operationId: api.elastic-query.deleteByQuery
+      responses:
+        201:
+          description: Success, document deleted
+  
+
   /document/{index}/{type}/{id}:
     get:
       produces:
@@ -119,5 +145,32 @@ paths:
       operationId: api.elastic-crud.deleteDocumentById
       responses:
         200:
+          description: Success, document deleted
+    put:
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+        - in: path
+          name: index
+          type: string
+          required: true 
+        - in: path
+          name: type
+          type: string 
+          required: true 
+        - in: path
+          name: id
+          type: string 
+          required: true 
+        - in: body
+          name: body
+          description: The search query to be run
+          schema:
+            type: object
+      operationId: api.elastic-crud.updateDocumentById
+      responses:
+        201:
           description: Success, document deleted
   
