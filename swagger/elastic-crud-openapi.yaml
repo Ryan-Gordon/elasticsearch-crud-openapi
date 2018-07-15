@@ -27,3 +27,55 @@ paths:
       responses:
         200:
           description: Success, your server is live
+  /insertDocument/:
+    post:
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+        - in: query
+          name: index
+          type: string
+        - in: query
+          name: type
+          type: string 
+        - in: query
+          name: id
+          type: string 
+          required: false 
+        - in: body
+          name: body
+          description: The document details to be indexed
+          schema:
+            type: object
+      operationId: api.elastic-crud.insertDocument
+      responses:
+        200:
+          description: Success, your server is live
+  /searchDocument/:
+    post:
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+        - in: query
+          name: index
+          type: string
+        - in: query
+          name: type
+          type: string 
+        - in: query
+          name: id
+          type: string 
+          required: false 
+        - in: body
+          name: body
+          description: The search query to be run
+          schema:
+            type: object
+      operationId: api.elastic-crud.searchDocument
+      responses:
+        200:
+          description: Success, your server is live

@@ -8,3 +8,11 @@ from flask import request, Response
 @inject(data_provider=ElasticProvider)
 def heartbeat(data_provider) -> str:
     return data_provider.heartbeat()
+
+@inject(data_provider=ElasticProvider)
+def insertDocument(data_provider,index, type, body) -> str:
+    return data_provider.insertDocument(index, type, body)
+
+@inject(data_provider=ElasticProvider)
+def searchDocument(data_provider,index, type, body) -> str:
+    return data_provider.searchDocument(index, type, body)
