@@ -79,3 +79,45 @@ paths:
       responses:
         200:
           description: Success, your server is live
+  /document/{index}/{type}/{id}:
+    get:
+      produces:
+      - application/json
+      parameters:
+        - in: path
+          name: index
+          type: string
+          required: true 
+        - in: path
+          name: type
+          type: string 
+          required: true 
+        - in: path
+          name: id
+          type: string 
+          required: true 
+      operationId: api.elastic-crud.getDocumentById
+      responses:
+        200:
+          description: Success, your server is live
+    delete:
+      produces:
+      - application/json
+      parameters:
+        - in: path
+          name: index
+          type: string
+          required: true 
+        - in: path
+          name: type
+          type: string 
+          required: true 
+        - in: path
+          name: id
+          type: string 
+          required: true 
+      operationId: api.elastic-crud.deleteDocumentById
+      responses:
+        200:
+          description: Success, document deleted
+  

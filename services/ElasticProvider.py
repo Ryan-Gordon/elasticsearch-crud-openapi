@@ -22,3 +22,11 @@ class ElasticProvider(object):
         return self.conn.index(index=index, doc_type=type, body=body, id=id)
     def searchDocument(self, index, type, body):
         return self.conn.search(index=index, doc_type=type, body=body)
+
+    def getDocumentById(self, index, type, id):
+        return self.conn.get(index=index, doc_type=type, id=id)
+    
+    def deleteDocumentById(self, index, type, id):
+        return self.conn.delete(index=index, doc_type=type, id=id)
+
+        

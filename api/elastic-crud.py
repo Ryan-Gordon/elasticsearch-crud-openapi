@@ -16,3 +16,14 @@ def insertDocument(data_provider,index, type, body,id=None) -> str:
 @inject(data_provider=ElasticProvider)
 def searchDocument(data_provider,index, type, body) -> str:
     return data_provider.searchDocument(index, type, body)
+
+@inject(data_provider=ElasticProvider)
+def getDocumentById(data_provider,index, type, id) -> str:
+    return data_provider.getDocumentById(index, type, id)
+
+@inject(data_provider=ElasticProvider)
+def deleteDocumentById(data_provider,index, type, id) -> str:
+    return data_provider.deleteDocumentById(index, type, id)
+
+
+
