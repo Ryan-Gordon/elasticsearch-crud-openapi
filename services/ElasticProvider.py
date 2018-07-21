@@ -1,16 +1,13 @@
 import os
 import requests
 import flask
-import redis
 import datetime
 import json
-
 from elasticsearch import Elasticsearch
 
 class ElasticProvider(object):
     def __init__(self,host):
         self.conn = Elasticsearch([host])
-        #self.conn = Elasticsearch(["http://localhost:9200"])
         
 
     def heartbeat(self) -> str:
@@ -38,6 +35,7 @@ class ElasticProvider(object):
     '''
 
     def searchDocument(self, index, type, body):
+
         return self.conn.search(index=index, doc_type=type, body=body)
 
     def deleteByQuery(self, index, type, query):
