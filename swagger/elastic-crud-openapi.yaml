@@ -30,7 +30,7 @@ paths:
           description: Success, your server is live
   /insertDocument/:
     post:
-      summary: Attempts to create a new document
+      summary: Attempts to create a new document using the Index API 
       tags:
       - CRUD
       consumes:
@@ -70,9 +70,11 @@ paths:
         - in: query
           name: index
           type: string
+          required: false 
         - in: query
           name: type
           type: string 
+          required: false 
         - in: query
           name: id
           type: string 
