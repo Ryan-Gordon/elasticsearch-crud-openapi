@@ -21,7 +21,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 
 <!-- ALL-CONTRIBUTORS-LIST:START -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars1.githubusercontent.com/u/11082710?v=4" width="100px;"/><br /><sub><b>Ryan Gordon</b></sub>](https://github.com/Ryan-Gordon)<br />[💻](https://github.com/Ryan-Gordon/elasticsearch-crud-openapi/Ryan-Gordon/ElasticSearch-OpenAPI/commits?author=Ryan-Gordon "Code") [📖](https://github.com/Ryan-Gordon/elasticsearch-crud-openapi/Ryan-Gordon/ElasticSearch-OpenAPI/commits?author=Ryan-Gordon "Documentation") |
+| [<img src="https://avatars1.githubusercontent.com/u/11082710?v=4" width="100px;"/><br /><sub><b>Ryan Gordon</b></sub>](https://github.com/Ryan-Gordon)<br />[💻](https://github.com/Ryan-Gordon/elasticsearch-crud-openapi/commits?author=Ryan-Gordon "Code") [📖](https://github.com/Ryan-Gordon/elasticsearch-crud-openapi/commits?author=Ryan-Gordon "Documentation") |
 | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 

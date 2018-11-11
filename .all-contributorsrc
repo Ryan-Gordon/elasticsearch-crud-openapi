@@ -1,8 +1,8 @@
 {
-  "projectName": "ElasticSearch-OpenAPI",
+  "projectName": "elasticsearch-crud-openapi",
   "projectOwner": "Ryan-Gordon",
   "repoType": "github",
-  "repoHost": "https://github.com/Ryan-Gordon/elasticsearch-crud-openapi",
+  "repoHost": "https://github.com",
   "files": [
     "README.md"
   ],
