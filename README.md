@@ -1,5 +1,7 @@
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 # ElasticSearch CRUD OpenAPI
+
 The repo lets you visually send HTTP requests to your ElasticSearch Datastore using its REST API.
 
 Alternatively you can use it to relay requets from your ElasticSearch as a Gateway
@@ -11,6 +13,21 @@ Create, Read, Update, Delete --> All 4 are supported. Most of these require an i
 Query Functions:
 Search --> search the elastic db for documents which match your provided query
 DeleteByQuery --> delete documents in the elastic db using a search query rather than specifying an ID 
+
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START -->
+<!-- prettier-ignore -->
+| [<img src="https://avatars1.githubusercontent.com/u/11082710?v=4" width="100px;"/><br /><sub><b>Ryan Gordon</b></sub>](https://github.com/Ryan-Gordon)<br />[💻](https://github.com/Ryan-Gordon/elasticsearch-crud-openapi/Ryan-Gordon/ElasticSearch-OpenAPI/commits?author=Ryan-Gordon "Code") [📖](https://github.com/Ryan-Gordon/elasticsearch-crud-openapi/Ryan-Gordon/ElasticSearch-OpenAPI/commits?author=Ryan-Gordon "Documentation") |
+| :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
+Please see CONTRIBUTING.md for more info.
+
 ## Installation
 You have two options in how you want to run this application. Standalone with python 3 or through a Docker container
 

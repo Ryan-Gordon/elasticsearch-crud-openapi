@@ -1,0 +1,24 @@
+{
+  "name": "elasticsearch-crud-openapi",
+  "version": "1.0.0",
+  "description": "OpenAPI documented REST API for contacting ElasticSearch. ",
+  "main": "app.py",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "add-contributor": "all-contributors add",
+    "generate-contributors": "all-contributors generate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ryan-Gordon/elasticsearch-crud-openapi.git"
+  },
+  "author": "Ryan Gordon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ryan-Gordon/elasticsearch-crud-openapi/issues"
+  },
+  "homepage": "https://github.com/Ryan-Gordon/elasticsearch-crud-openapi#readme",
+  "devDependencies": {
+    "all-contributors-cli": "^4.11.2"
+  }
+}
